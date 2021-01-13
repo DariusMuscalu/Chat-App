@@ -64,10 +64,9 @@ body {
   left: 0;
   right: 0;
   width: 70%;
-  height: 60vh;
+  height: 100%;
   margin: auto;
-  background: #fff;
-  color: white;
+  background: #f5f3f7;
   border: 15px solid #fff;
   border-radius: 15px;
   -webkit-box-shadow: 2px 2px 2px 4px #eee;
@@ -82,7 +81,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 1.4rem  0.5rem;
+  margin-bottom: 1rem;
   font-size: 0.7rem;
+  color: white;
 }
 
 #container .phone-frame .phone-header p {
@@ -102,22 +103,63 @@ body {
 }
 
 #container .phone-frame .phone-header .flexbox-container {
-  margin: 1rem;
+  margin: 1.2rem 0;
 }
 
 #container .phone-frame .phone-header img {
   border-radius: 50%;
   border: 2px white solid;
-  width: 25%;
-  height: auto;
+  width: auto;
+  height: 60px;
+  margin: 0.5rem;
 }
 
-#container .phone-frame img {
-  display: inline;
+#container .messages-sent p {
+  background: #c6cacd;
+  color: #9241c8;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  width: 50%;
+  border-radius: 10px;
+}
+
+#container .messages-recived p {
+  background: white;
+  color: #c6cacd;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+  width: auto;
+  border-radius: 10px;
+}
+
+#container .messages-recived img {
+  border-radius: 10px;
+  width: 50px;
+  height: auto;
+  margin: 0.3rem;
+}
+
+#container .messages-recived .flexbox-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#container .messages-recived .flexbox-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 /*# sourceMappingURL=style.css.map */
