@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 2.5rem;
+  padding: 1rem 0.2rem;
+}
+
+/* Primary Colors */
+/* Secondary Colors */
+/* Bg-colors */
+.phone-container {
+  background: #f4f4f4;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+#container .bg-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#container .bg-violet {
+  background: #9241c8;
+  height: 50vh;
+  width: 50%;
+  justify-self: flex-end;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-bottom-right-radius: 300px;
+}
+
+#container .bg-pale-violet {
+  background: #d89eff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  width: 50%;
+  border-top-left-radius: 300px;
+}
+
+#container .phone-frame {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  width: 70%;
+  height: 60vh;
+  margin: auto;
+  background: #fff;
+  color: white;
+  border: 15px solid #fff;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 2px 4px #eee;
+          box-shadow: 2px 2px 2px 4px #eee;
+}
+
+#container .phone-frame .phone-header {
+  background: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to left, #e942ff, #8838ff);
+  border-radius: 25px 25px 12px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.4rem  0.5rem;
+  font-size: 0.7rem;
+}
+
+#container .phone-frame .phone-header p {
+  padding-top: 0.3rem;
+}
+
+#container .phone-frame .phone-header .white-bg {
+  padding: 0.8rem;
+  background: white;
+  position: absolute;
+  width: 50%;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: 0 0 20px 20px;
+}
+
+#container .phone-frame .phone-header .flexbox-container {
+  margin: 1rem;
+}
+
+#container .phone-frame .phone-header img {
+  border-radius: 50%;
+  border: 2px white solid;
+  width: 25%;
+  height: auto;
+}
+
+#container .phone-frame img {
+  display: inline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+/*# sourceMappingURL=style.css.map */
