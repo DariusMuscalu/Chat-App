@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  line-height: 1.4;
+}
+
 a {
   text-decoration: none;
 }
@@ -12,6 +16,12 @@ a {
 .icon {
   font-size: 2.5rem;
   padding: 1rem 0.2rem;
+}
+
+span {
+  font-weight: 700;
+  position: absolute;
+  left: 130px;
 }
 
 /* Primary Colors */
@@ -54,7 +64,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   height: 50vh;
-  width: 50%;
+  width: 30%;
   border-top-left-radius: 300px;
 }
 
@@ -63,14 +73,14 @@ body {
   top: 10%;
   left: 0;
   right: 0;
-  width: 70%;
-  height: 100%;
+  width: 300px;
+  height: 600px;
   margin: auto;
   background: #f5f3f7;
-  border: 15px solid #fff;
+  border: 10px solid white;
   border-radius: 15px;
-  -webkit-box-shadow: 2px 2px 2px 4px #eee;
-          box-shadow: 2px 2px 2px 4px #eee;
+  -webkit-box-shadow: 1px 1px 10px #444;
+          box-shadow: 1px 1px 10px #444;
 }
 
 #container .phone-frame .phone-header {
@@ -80,9 +90,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.4rem  0.5rem;
+  padding: 1.2rem  0.5rem;
   margin-bottom: 1rem;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   color: white;
 }
 
@@ -94,7 +104,7 @@ body {
   padding: 0.8rem;
   background: white;
   position: absolute;
-  width: 50%;
+  width: 65%;
   margin: auto;
   top: 0;
   right: 0;
@@ -109,39 +119,59 @@ body {
 #container .phone-frame .phone-header img {
   border-radius: 50%;
   border: 2px white solid;
-  width: auto;
-  height: 60px;
-  margin: 0.5rem;
+  width: 50px;
+  height: 50px;
+  margin: 0.8rem 0.5rem;
 }
 
-#container .messages-sent p {
+#container .phone-frame .phone-header .btn-left {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-left: 0.2rem;
+}
+
+#container .phone-frame .phone-header .btn-right {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 1.9rem;
+  top: 2.5rem;
+}
+
+#container .phone-content .messages-sent p {
   background: #c6cacd;
   color: #9241c8;
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.3rem;
   font-size: 0.6rem;
-  width: 50%;
+  width: 140px;
   border-radius: 10px;
 }
 
-#container .messages-recived p {
+#container .phone-content .messages-recived p {
   background: white;
-  color: #c6cacd;
+  color: #a39daa;
   margin: 0.5rem;
   padding: 0.5rem;
   font-size: 0.6rem;
-  width: auto;
+  width: 150px;
   border-radius: 10px;
 }
 
-#container .messages-recived img {
+#container .phone-content .messages-recived .right-align {
+  text-align: right;
+  width: auto;
+}
+
+#container .phone-content .messages-recived img {
   border-radius: 10px;
   width: 50px;
   height: auto;
   margin: 0.3rem;
 }
 
-#container .messages-recived .flexbox-img {
+#container .phone-content .messages-recived .flexbox-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +180,7 @@ body {
           justify-content: flex-end;
 }
 
-#container .messages-recived .flexbox-content {
+#container .phone-content .messages-recived .flexbox-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,5 +191,64 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+#container .phone-content .btn button {
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to right, #e942ff, #8838ff);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 150px;
+  border: none;
+  border-radius: 10px 10px 10px 5px;
+  outline: none;
+  margin: 0.8rem 0.5rem;
+  padding: 0.5rem 0;
+  color: white;
+  font-size: 0.7rem;
+}
+
+#container .phone-content .btn button i {
+  padding: 0 0.4rem;
+}
+
+#container .phone-content .send-message {
+  width: 95%;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+#container .phone-content .send-message textarea {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: #c6cacd;
+  padding: 0.7rem;
+  resize: none;
+}
+
+#container .phone-content .send-message .send {
+  background: #3e2753;
+  color: white;
+  position: absolute;
+  right: 1rem;
+  padding: 0.5rem;
+  margin: 0.2rem 0;
+  border-radius: 60%;
+  outline: none;
+  border: none;
+}
+
+#container #about {
+  text-align: center;
+  margin: 1rem;
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */

@@ -28,7 +28,7 @@ body {
         background: $pale-violet;
         display: flex;
         height: 50vh;
-        width: 50%;
+        width: 30%;
         border-top-left-radius: 300px;
     }
 
@@ -37,21 +37,21 @@ body {
         top: 10%;
         left: 0;
         right: 0;
-        width: 70%;
-        height: 100%;
+        width: 300px;
+        height: 600px;
         margin: auto;
         background: $app-bg;
-        border: 15px solid #fff;
+        border: 10px solid $white;
         border-radius: 15px;
-        box-shadow: 2px 2px 2px 4px #eee;
+        box-shadow: 1px 1px 10px #444;
 
         .phone-header {
             background: linear-gradient(to left, $bg-magenta, $bg-violet);
             border-radius: 25px 25px 12px 12px;
             display: flex;
-            padding: 1.4rem  0.5rem;
+            padding: 1.2rem  0.5rem;
             margin-bottom: 1rem;
-            font-size: 0.7rem;
+            font-size: 0.5rem;
             color: $white;
 
             p{
@@ -62,7 +62,7 @@ body {
                 padding: 0.8rem;
                 background: $white;
                 position: absolute;
-                width: 50%;
+                width: 65%;
                 margin: auto;
                 top: 0;
                 right: 0;
@@ -77,57 +77,132 @@ body {
             img {
                 border-radius: 50%;
                 border: 2px $white solid;
-                width: auto;
-                height: 60px;
-                margin: 0.5rem;
+                width: 50px;
+                height: 50px;
+                margin: 0.8rem 0.5rem;
+            }
+
+            .btn-left {
+                color: $white;
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+                margin-left: 0.2rem;
+            }
+
+            .btn-right {
+                color: $white;
+                font-size: 1.5rem;
+                position: absolute;
+                right: 1.9rem;
+                top: 2.5rem;
             }
         }
+
     }
 
-    .messages-sent {
+    .phone-content {
+        .messages-sent {
 
-        p {
-            background: $graish-blue;
-            color: $moderate-violet;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            font-size: 0.6rem;
-            width: 50%;
-            border-radius: 10px;
+            p {
+                background: $graish-blue;
+                color: $moderate-violet;
+                margin: 0.5rem;
+                padding: 0.3rem;
+                font-size: 0.6rem;
+                width: 140px;
+                border-radius: 10px;
+            }
         }
-    }
-
-    .messages-recived {
-
-        p {
-            background: $white;
-            color: $graish-blue;
-            margin: 0.5rem;
-            padding: 0.5rem;
-            font-size: 0.6rem;
-            width: auto;
-            border-radius: 10px;
-        }
-
-        img {
-            border-radius: 10px;
-            width: 50px;
-            height: auto;
-            margin: 0.3rem;
-        }
-
-        .flexbox-img {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .flexbox-content {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-    }
-
-
     
+        .messages-recived {
+    
+            p {
+                background: $white;
+                color: $dark-grayish-violet;
+                margin: 0.5rem;
+                padding: 0.5rem;
+                font-size: 0.6rem;
+                width: 150px;
+                border-radius: 10px;
+            }
+    
+            .right-align {
+                text-align: right;
+                width: auto;
+            }
+    
+            img {
+                border-radius: 10px;
+                width: 50px;
+                height: auto;
+                margin: 0.3rem;
+            }
+    
+            .flexbox-img {
+                display: flex;
+                justify-content: flex-end;
+            }
+    
+            .flexbox-content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+
+        .btn button {
+            background: linear-gradient(to right, $bg-magenta, $bg-violet);
+            display: flex;
+            flex-direction: row;
+            width: 150px;
+            border: none;
+            border-radius: 10px 10px 10px 5px;
+            outline: none;
+            margin: 0.8rem 0.5rem;
+            padding: 0.5rem 0;
+            color: $white;
+            font-size: 0.7rem;
+
+            i {
+                padding: 0 0.4rem;
+            }
+        }
+
+        .send-message {
+            
+            width: 95%;
+            margin: auto;
+            margin-top: 1rem;
+            textarea {
+                width: 100%;
+                height: 40px;
+                border: none;
+                outline: none;
+                border-radius: 25px;
+                color: $graish-blue;
+                padding: 0.7rem;
+                resize: none;
+            }
+
+            .send {
+                background: $submit-btn-bg;
+                color: $white;
+                position: absolute;
+                right: 1rem;
+                padding: 0.5rem;
+                margin: 0.2rem 0;
+                border-radius: 60%;
+                outline: none;
+                border: none;
+            }
+        }
+    
+    }
+
+    #about {
+        text-align: center;
+        margin: 1rem;
+        background-color: red;
+    }
 }
+
