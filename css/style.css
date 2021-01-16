@@ -47,11 +47,18 @@ span {
       -ms-flex-align: end;
           align-items: flex-end;
   background: #f5f3f7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 120vh;
 }
 
 #container .bg-violet {
   background: #9241c8;
-  height: 50vh;
+  height: 60vh;
   width: 50%;
   justify-self: flex-end;
   -ms-flex-item-align: start;
@@ -240,31 +247,56 @@ span {
   background: #3e2753;
   color: white;
   position: absolute;
-  right: 1rem;
-  padding: 0.5rem;
-  margin: 0.2rem 0;
+  right: 0.6rem;
+  padding: 0.7rem 0.8rem;
   border-radius: 60%;
   outline: none;
   border: none;
 }
 
-#about {
+#about-phone {
   text-align: center;
   margin: 2rem 0;
   color: #a39daa;
   line-height: 1.8;
 }
 
-#about h1 {
+#about-phone h1 {
   color: #3e2753;
   margin-bottom: 1rem;
   font-size: 2.1rem;
+}
+
+#about-desktop {
+  display: none;
 }
 
 @media (min-width: 768px) {
   #container .bg-violet {
     height: 50vh;
     width: 30%;
+  }
+  #container .phone-frame {
+    margin: 3rem;
+    left: 20%;
+  }
+  #container #about-phone {
+    display: none;
+  }
+  #about-desktop {
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    padding: 5rem 15rem;
+    margin: 0 8rem;
+    color: #a39daa;
+    line-height: 1.8;
+    display: block;
+  }
+  #about-desktop h1 {
+    color: #3e2753;
+    margin-bottom: 1rem;
+    font-size: 2.1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
